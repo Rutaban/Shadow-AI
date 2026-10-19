@@ -1,0 +1,33 @@
+loaded 2180 AI bound flows, sequences (2180, 128, 3)
+          scenario      dur   sbytes   dbytes  upload_share  srecords  drecords  srec_mean  sinpkt_mean  macro_gap_cv  up_burst_count  max_uplink_run  byte_asymmetry   n
+    agentic_scrape 194.2503 301418.0 650740.0        0.3171      77.0    4011.5  3964.1430       2.5318        0.1888            37.0             3.0         -0.7672 300
+       benign_chat  52.6504   5411.5  69740.0        0.0699      11.0     448.0   445.5923       4.4436        0.3509             4.5             3.0         -2.5881 620
+      benign_docqa  27.2649   9828.0  68872.5        0.1325       9.0     440.5  1243.7222       3.0942        0.0609             3.0             3.0         -1.8787 380
+exfil_code_chunked  33.5145 107601.5 201923.0        0.3451      16.0    1305.5  6739.8750       1.5954        0.1761             4.5             4.0         -0.6409 340
+    exfil_doc_bulk  26.8790 558353.5 188139.0        0.7604      40.0    1212.5 13980.2817       0.3080        0.0000             2.0            25.0          1.1547 300
+  exfil_obfuscated  38.2096  83817.5 192031.0        0.3173      15.0    1242.0  6175.5248       1.8066        0.1684             4.0             3.0         -0.7663 240
+
+[task A] three class task on the harmonised feature space
+
+[task B] AI bound binary task on the full metadata feature space
+
+[task C] content matching DLP baseline
+
+[task D] leave one behaviour out generalisation
+
+[task E] evasion robustness
+figure fig02_pipeline
+figure fig01_threat_model
+figure fig03_separation
+figure fig04_record_traces
+figure fig05_roc_pr_training
+figure fig06_confusion_importance
+figure fig07_outcomes
+
+finished in 146.7s
+{
+ "Logistic Regression": 0.9769347424849817,
+ "Random Forest": 0.9815434978928357,
+ "Gradient Boosting": 0.9753913305237809,
+ "Bidirectional LSTM": 0.887524825251433
+}
